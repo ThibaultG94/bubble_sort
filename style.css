@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 body {
@@ -15,10 +17,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 200px;
+    flex-direction: column;
 }
 
 table {
     border-collapse: collapse;
+    margin-bottom: 100px;
 }
 
 th {
@@ -30,4 +34,16 @@ td {
     font-size: 2.5rem;
     padding: 10px 20px;
     border: 2px solid black;
+}
+
+#btn {
+    background: rgb(255, 255, 169);
+    font-size: 2rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#tri td {
+    visibility: hidden;
 }

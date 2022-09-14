@@ -27,8 +27,6 @@ for (let i = 0; i < numberArray.length; i++) {
   });
 }
 
-console.log(numberArray);
-
 // Bubble sort
 
 for (let i = 0; i < numberArray.length - 1; i++) {
@@ -41,7 +39,6 @@ for (let i = 0; i < numberArray.length - 1; i++) {
     }
   }
 }
-console.log(numberArray);
 
 for (let i = 0; i < numberArray.length; i++) {
   let num = document.querySelectorAll("#tri > td");
@@ -51,3 +48,31 @@ for (let i = 0; i < numberArray.length; i++) {
     }
   });
 }
+
+btn.addEventListener("click", () => {
+  let num = document.querySelectorAll("#sort > td");
+  let sortNum = document.querySelectorAll("#tri > td");
+  let i = 0;
+
+  function numberAppear() {
+    let active = false;
+    if (i < 10) {
+      setTimeout(() => {
+        num.forEach((e) => {
+          if (
+            e.textContent == sortNum[i].textContent &&
+            active === false &&
+            e.style.visibility !== "hidden"
+          ) {
+            e.style.visibility = "hidden";
+            active = true;
+          }
+        });
+        sortNum[i].style.visibility = "visible";
+        i++;
+        numberAppear();
+      }, 1000);
+    }
+  }
+  numberAppear();
+});
