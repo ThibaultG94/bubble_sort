@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(170, 242, 255);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 3rem;
+    border: 2px solid black;
+}
+
+td {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
