@@ -23,6 +23,7 @@ body {
 table {
     border-collapse: collapse;
     margin-bottom: 100px;
+    background: rgb(255, 255, 169);
 }
 
 th {
