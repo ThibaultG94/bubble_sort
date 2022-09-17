@@ -18,9 +18,17 @@ const numberArray = [
   numberRandom(),
 ];
 
+const numberBubble = numberArray;
+
 for (let i = 0; i < numberArray.length; i++) {
-  let num = document.querySelectorAll("#sort > td");
-  num.forEach((e) => {
+  let num1 = document.querySelectorAll("#sortArray > td");
+  let num2 = document.querySelectorAll("#sortBubble > td");
+  num1.forEach((e) => {
+    if (e.id == i) {
+      e.textContent = numberArray[i];
+    }
+  });
+  num2.forEach((e) => {
     if (e.id == i) {
       e.textContent = numberArray[i];
     }

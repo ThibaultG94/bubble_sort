@@ -16,13 +16,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 50px;
     flex-direction: column;
 }
 
 table {
     border-collapse: collapse;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background: rgb(255, 255, 169);
 }
 
