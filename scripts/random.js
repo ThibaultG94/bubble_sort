@@ -18,7 +18,18 @@ const numberArray = [
   numberRandom(),
 ];
 
-const numberBubble = numberArray;
+const numberBubble = [
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+  numberRandom(),
+];
 
 for (let i = 0; i < numberArray.length; i++) {
   let num1 = document.querySelectorAll("#sortArray > td");
@@ -30,7 +41,7 @@ for (let i = 0; i < numberArray.length; i++) {
   });
   num2.forEach((e) => {
     if (e.id == i) {
-      e.textContent = numberArray[i];
+      e.textContent = numberBubble[i];
     }
   });
 }

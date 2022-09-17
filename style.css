@@ -50,6 +50,6 @@ td {
     transform: scale(0.9);
 }
 
-#tri td {
+#triArray td {
     visibility: hidden;
 }

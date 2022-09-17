@@ -8,7 +8,7 @@ bubble();
 // Writing (invisible)
 
 for (let i = 0; i < numberArray.length; i++) {
-  let num = document.querySelectorAll("#tri > td");
+  let num = document.querySelectorAll("#triArray > td");
   num.forEach((e) => {
     if (e.classList.value == i) {
       e.textContent = numberArray[i];
@@ -20,7 +20,7 @@ for (let i = 0; i < numberArray.length; i++) {
 
 btn.addEventListener("click", () => {
   let num = document.querySelectorAll("#sortArray > td");
-  let sortNum = document.querySelectorAll("#tri > td");
+  let sortNum = document.querySelectorAll("#triArray > td");
   let i = 0;
 
   if (btn.value == "Reset") {
