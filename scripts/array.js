@@ -1,7 +1,11 @@
+// Function sort
+
 function bubble() {
   numberArray.sort((a, b) => a - b);
 }
 bubble();
+
+// Writing (invisible)
 
 for (let i = 0; i < numberArray.length; i++) {
   let num = document.querySelectorAll("#tri > td");
@@ -12,6 +16,8 @@ for (let i = 0; i < numberArray.length; i++) {
   });
 }
 
+// numberAppear
+
 btn.addEventListener("click", () => {
   let num = document.querySelectorAll("#sortArray > td");
   let sortNum = document.querySelectorAll("#tri > td");
@@ -21,7 +27,7 @@ btn.addEventListener("click", () => {
     window.location.reload();
   } else {
     btn.style.visibility = "hidden";
-    function numberAppear() {
+    function numberAppearArray() {
       let active = false;
       if (i < 10) {
         setTimeout(() => {
@@ -37,7 +43,7 @@ btn.addEventListener("click", () => {
           });
           sortNum[i].style.visibility = "visible";
           i++;
-          numberAppear();
+          numberAppearArray();
         }, 1000);
       } else {
         setTimeout(() => {
@@ -46,6 +52,6 @@ btn.addEventListener("click", () => {
         }, 1000);
       }
     }
-    numberAppear();
+    numberAppearArray();
   }
 });
