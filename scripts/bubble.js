@@ -60,14 +60,14 @@ btn.addEventListener("click", () => {
       } else {
         setTimeout(() => {
           num2[k + 1].style.background = "#a9a9ff";
-        }, 500);
+        }, 0);
         setTimeout(() => {
           num2[k].style.background = "#a9a9ff";
-        }, 1000);
+        }, 500);
         setTimeout(() => {
           btn.style.visibility = "visible";
           btn.value = "Reset";
-        }, 1500);
+        }, 1000);
       }
     }
     numberAppearBubble();

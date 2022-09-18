@@ -5,30 +5,41 @@ let numberRandom = () => {
   return number;
 };
 
+let numberOne = numberRandom();
+let numberTwo = numberRandom();
+let numberThree = numberRandom();
+let numberFour = numberRandom();
+let numberFive = numberRandom();
+let numberSix = numberRandom();
+let numberSeven = numberRandom();
+let numberEight = numberRandom();
+let numberNine = numberRandom();
+let numberTen = numberRandom();
+
 const numberArray = [
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
+  numberOne,
+  numberTwo,
+  numberThree,
+  numberFour,
+  numberFive,
+  numberSix,
+  numberSeven,
+  numberEight,
+  numberNine,
+  numberTen,
 ];
 
 const numberBubble = [
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
-  numberRandom(),
+  numberOne,
+  numberTwo,
+  numberThree,
+  numberFour,
+  numberFive,
+  numberSix,
+  numberSeven,
+  numberEight,
+  numberNine,
+  numberTen,
 ];
 
 for (let i = 0; i < numberArray.length; i++) {

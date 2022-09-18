@@ -45,9 +45,9 @@ btn.addEventListener("click", () => {
           sortNum[i].style.visibility = "visible";
           sortNum[i].style.background = "#a9a9ff";
           i++;
-          t = t + 500;
+          t = t + 350;
           numberAppearArray();
-        }, 5000 - t);
+        }, 4000 - t);
       } else {
         setTimeout(() => {
           btn.style.visibility = "visible";
