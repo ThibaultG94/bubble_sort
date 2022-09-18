@@ -22,6 +22,7 @@ btn.addEventListener("click", () => {
   let num = document.querySelectorAll("#sortArray > td");
   let sortNum = document.querySelectorAll("#triArray > td");
   let i = 0;
+  let t = 0;
 
   if (btn.value == "Reset") {
     window.location.reload();
@@ -42,14 +43,16 @@ btn.addEventListener("click", () => {
             }
           });
           sortNum[i].style.visibility = "visible";
+          sortNum[i].style.background = "#a9a9ff";
           i++;
+          t = t + 500;
           numberAppearArray();
-        }, 1000);
+        }, 5000 - t);
       } else {
         setTimeout(() => {
           btn.style.visibility = "visible";
           btn.value = "Reset";
-        }, 1000);
+        }, 60000);
       }
     }
     numberAppearArray();

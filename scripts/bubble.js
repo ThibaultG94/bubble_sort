@@ -23,6 +23,10 @@ btn.addEventListener("click", () => {
     function numberAppearBubble() {
       if (j < numberBubble.length - 1) {
         btn.style.visibility = "hidden";
+        if (k < 10) {
+          num2[k].style.background = "#a9a9ff";
+        }
+        console.log(k, j);
         setTimeout(() => {
           if (k < numberBubble.length - j) {
             if (numberBubble[k] > numberBubble[k + 1]) {
@@ -39,23 +43,31 @@ btn.addEventListener("click", () => {
                   }
                 });
               }
+              num2[k].style.background = "rgb(255, 255, 169)";
               k++;
               numberAppearBubble();
             } else {
+              num2[k].style.background = "rgb(255, 255, 169)";
               k++;
               numberAppearBubble();
             }
           } else {
-            j++;
             k = 0;
+            j++;
             numberAppearBubble();
           }
         }, 500);
       } else {
         setTimeout(() => {
+          num2[k + 1].style.background = "#a9a9ff";
+        }, 500);
+        setTimeout(() => {
+          num2[k].style.background = "#a9a9ff";
+        }, 1000);
+        setTimeout(() => {
           btn.style.visibility = "visible";
           btn.value = "Reset";
-        }, 500);
+        }, 1500);
       }
     }
     numberAppearBubble();
