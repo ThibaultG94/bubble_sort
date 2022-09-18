@@ -50,6 +50,9 @@ btn.addEventListener("click", () => {
               });
             }
             num3[m].style.background = "rgb(255, 255, 169)";
+            if (m == numberSelection.length - 1) {
+              num3[l].style.background = "#a9a9ff";
+            }
             m++;
             numberAppearSelection();
           } else {
@@ -58,6 +61,12 @@ btn.addEventListener("click", () => {
             console.log(m, l);
             numberAppearSelection();
           }
+        }, 500);
+      } else {
+        num3[l].style.background = "#a9a9ff";
+        setTimeout(() => {
+          btn.style.opacity = 1;
+          btn.value = "Reset";
         }, 500);
       }
     }
