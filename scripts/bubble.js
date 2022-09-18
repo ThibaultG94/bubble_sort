@@ -34,11 +34,9 @@ btn.addEventListener("click", () => {
                 numberBubble[k],
               ];
               for (let i = 0; i < numberBubble.length; i++) {
-                let num2 = document.querySelectorAll("#sortBubble > td");
                 num2.forEach((e) => {
                   if (e.id == i) {
                     e.textContent = numberBubble[i];
-                  } else {
                   }
                 });
               }
