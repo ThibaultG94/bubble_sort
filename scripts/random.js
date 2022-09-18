@@ -42,6 +42,19 @@ const numberBubble = [
   numberTen,
 ];
 
+const numberSelection = [
+  numberOne,
+  numberTwo,
+  numberThree,
+  numberFour,
+  numberFive,
+  numberSix,
+  numberSeven,
+  numberEight,
+  numberNine,
+  numberTen,
+];
+
 for (let i = 0; i < numberArray.length; i++) {
   let num1 = document.querySelectorAll("#sortArray > td");
   let num2 = document.querySelectorAll("#sortBubble > td");
