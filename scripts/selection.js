@@ -58,7 +58,6 @@ btn.addEventListener("click", () => {
           } else {
             l++;
             m = l + 1;
-            console.log(m, l);
             numberAppearSelection();
           }
         }, 500);

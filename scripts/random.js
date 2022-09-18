@@ -55,10 +55,24 @@ const numberSelection = [
   numberTen,
 ];
 
+const numberQuick = [
+  numberOne,
+  numberTwo,
+  numberThree,
+  numberFour,
+  numberFive,
+  numberSix,
+  numberSeven,
+  numberEight,
+  numberNine,
+  numberTen,
+];
+
 for (let i = 0; i < numberArray.length; i++) {
   let num1 = document.querySelectorAll("#sortArray > td");
   let num2 = document.querySelectorAll("#sortBubble > td");
   let num3 = document.querySelectorAll("#sortSelection > td");
+  let num4 = document.querySelectorAll("#sortQuick > td");
   num1.forEach((e) => {
     if (e.id == i) {
       e.textContent = numberArray[i];
@@ -72,6 +86,11 @@ for (let i = 0; i < numberArray.length; i++) {
   num3.forEach((e) => {
     if (e.id == i) {
       e.textContent = numberSelection[i];
+    }
+  });
+  num4.forEach((e) => {
+    if (e.id == i) {
+      e.textContent = numberQuick[i];
     }
   });
 }
