@@ -58,6 +58,7 @@ const numberSelection = [
 for (let i = 0; i < numberArray.length; i++) {
   let num1 = document.querySelectorAll("#sortArray > td");
   let num2 = document.querySelectorAll("#sortBubble > td");
+  let num3 = document.querySelectorAll("#sortSelection > td");
   num1.forEach((e) => {
     if (e.id == i) {
       e.textContent = numberArray[i];
@@ -66,6 +67,11 @@ for (let i = 0; i < numberArray.length; i++) {
   num2.forEach((e) => {
     if (e.id == i) {
       e.textContent = numberBubble[i];
+    }
+  });
+  num3.forEach((e) => {
+    if (e.id == i) {
+      e.textContent = numberSelection[i];
     }
   });
 }

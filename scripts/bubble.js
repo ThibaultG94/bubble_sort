@@ -26,7 +26,6 @@ btn.addEventListener("click", () => {
         if (k < 10) {
           num2[k].style.background = "#a9a9ff";
         }
-        console.log(k, j);
         setTimeout(() => {
           if (k < numberBubble.length - j) {
             if (numberBubble[k] > numberBubble[k + 1]) {
