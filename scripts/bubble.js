@@ -56,15 +56,19 @@ btn.addEventListener("click", () => {
         }, 500);
       } else {
         setTimeout(() => {
-          num2[k + 1].style.background = "#a9a9ff";
+          num2[k].style.background = "#a9a9ff";
         }, 0);
         setTimeout(() => {
-          num2[k].style.background = "#a9a9ff";
+          num2[k + 1].style.background = "#a9a9ff";
+          num2[k].style.background = "rgb(255, 255, 169)";
         }, 500);
+        setTimeout(() => {
+          num2[k].style.background = "#a9a9ff";
+        }, 1000);
         setTimeout(() => {
           btn.style.visibility = "visible";
           btn.value = "Reset";
-        }, 1000);
+        }, 1500);
       }
     }
     numberAppearBubble();

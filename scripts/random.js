@@ -88,9 +88,9 @@ for (let i = 0; i < numberArray.length; i++) {
       e.textContent = numberSelection[i];
     }
   });
-  num4.forEach((e) => {
-    if (e.id == i) {
-      e.textContent = numberQuick[i];
-    }
-  });
+  // num4.forEach((e) => {
+  //   if (e.id == i) {
+  //     e.textContent = numberQuick[i];
+  //   }
+  // });
 }
